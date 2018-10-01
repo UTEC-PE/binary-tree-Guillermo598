@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Documents/GitHub/binary-tree-Guillermo598/main.cpp
+tree.h
+D:/Documents/GitHub/binary-tree-Guillermo598/tree.h
+iostream
+-
+
+D:/Documents/GitHub/binary-tree-Guillermo598/node.h
+
+D:/Documents/GitHub/binary-tree-Guillermo598/tree.h
+node.h
+D:/Documents/GitHub/binary-tree-Guillermo598/node.h
+iostream
+-
+
