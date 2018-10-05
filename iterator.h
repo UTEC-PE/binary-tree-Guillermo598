@@ -11,7 +11,7 @@ class Iterator {
 private:
     Node<T>* current;
     Node<T>* root;
-    vector<auto> stack;
+    vector<Node<T>*> stack; // Auto en el stack?
 
 public:
     Iterator(){
@@ -33,7 +33,7 @@ public:
         return current -> data;
     };
 
-    Iterator<T> begin(){
+    Iterator<T> begin(){ // Esto debería estar en el Tree
         current = root;
         while (current -> left) {
             stack.push_back(&current);
@@ -58,7 +58,7 @@ public:
         }
     };
 
-    Iterator<T> end(){
+    Iterator<T> end(){ // Esto debería estar en el Tree
         current = root;
         while (current -> right)
             current = current -> right;

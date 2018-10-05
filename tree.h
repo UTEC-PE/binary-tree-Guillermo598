@@ -7,12 +7,13 @@
 #include <vector>
 using namespace std;
 
+// Faltó la función para obtener el peso
+// Hay varias cosas que corregir, qué pasó? 
 template <typename T>
 class Tree {
 private:
     Node<T>* root;
     Node<T>* current;
-    vector<auto> stack;
 
 public:
 
@@ -97,7 +98,7 @@ public:
             cout << "No number in tree to remove" << endl;
     };
 
-    void print() {
+    void print() { // Creo que te confundiste un poco con el tema del iterador
         Iterator<int>* ite = new Iterator<T>(root);
         for (ite->begin(); ite!=ite->end(); ite++) {
             cout << current -> data;
